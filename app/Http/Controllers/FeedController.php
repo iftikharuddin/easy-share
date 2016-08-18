@@ -8,7 +8,7 @@ use App\Http\Requests;
 class FeedController extends Controller
 {
    public function demo() {
-    $feed = \Feeds::make('http://phpdummies.com/rss', true); // if RSS Feed has invalid mime types, 
+    $feed = \Feeds::make('http://website.com/rss', true); // if RSS Feed has invalid mime types, 
     $data = array(
       'title'     => $feed->get_title(),
       'permalink' => $feed->get_permalink(),
